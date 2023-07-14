@@ -1,0 +1,18 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-uri:
+      defaultZone: http://localhost:8080/eureka/
+  instance:
+    hostname: localhost
+
+microservice:
+  group-management-service:
+    endpoints:
+      endpoint:
+        uri: http://GROUP-MANAGEMENT-SERVICE/manage/addGroup
+  email-management-service:
+    endpoints:
+      endpoint:
+        uri: http://EMAIL-MANAGEMENT-SERVICE/mail/send
