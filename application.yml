@@ -11,7 +11,7 @@ microservice:
   group-management-service:
     endpoints:
       endpoint:
-        uri: http://GROUP-MANAGEMENT-SERVICE/manage/addGroup
+        uri: http://GROUP-MANAGEMENT-SERVICE/manage/getGroup
   email-management-service:
     endpoints:
       endpoint:
